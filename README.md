@@ -1,2 +1,2 @@
 # GB Emulator
-(expected year of completion 2030)
+(Expected year of completion 2030)
