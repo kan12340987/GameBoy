@@ -1,9 +1,11 @@
 #include <iostream>
-using namespace std;
-//Using SDL and standard IO
  #include <SDL2/SDL.h>
- const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
+using namespace std;
+
+// window size declaration
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 576;
+
 int main() {
     //The window we'll be rendering to
     SDL_Window* window = NULL;
