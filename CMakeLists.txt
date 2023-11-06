@@ -8,8 +8,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 find_package(SDL2 REQUIRED)
-find_package(SDL2 REQUIRED CONFIG COMPONENTS SDL2main)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(gbemu src/emu_core.cpp)
+include_directories(include)
+
+add_executable(gbemu src/emu_core.cpp src/cpu.cpp src/memory.cpp ${include})
 target_link_libraries(gbemu ${SDL2_LIBRARIES})
