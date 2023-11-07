@@ -46,7 +46,7 @@ int main() {
             // SDL_RenderDrawPoint(renderer, i, i);
             i++;
         }
-    }
+    }   
 
 
 }
