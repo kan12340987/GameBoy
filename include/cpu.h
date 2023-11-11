@@ -1,7 +1,8 @@
 #include <iostream>
 #include<chrono>
-#include<time.h>
-#include <vector>
+#include <thread>
+// #include<time.h>
+// #include <vector>
 // #define freq INT 4000000;
 class cpu
 {

@@ -10,7 +10,10 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
+set (SOURCE_DIR "${CMAKE_SOURCE_DIR}/src/")
 include_directories(include)
 
-add_executable(gbemu src/emu_core.cpp src/cpu.cpp src/memory.cpp ${include})
+file (GLOB SOURCE_FILES "${SOURCE_DIR}/*.cpp")
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
 target_link_libraries(gbemu ${SDL2_LIBRARIES})
